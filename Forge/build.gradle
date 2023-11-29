@@ -13,8 +13,8 @@ buildscript{
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 
-def mcversion = "1.16.3"
-def forgeversion = "34.0.0"
+def mcversion = "1.18.2"
+def forgeversion = "40.4.0"
 
 def prefixName = 'displayName = '
 def prefixVersion = 'version = '
@@ -27,10 +27,10 @@ group = 'chylex.respack'
 version = metaVersion
 archivesBaseName = metaName.replaceAll('\\s', '')
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.17'
 
 minecraft{
-    mappings channel: 'snapshot', version: '20200707-1.16.1'
+    mappings channel: 'snapshot', version: '20220707-1.18.2'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     
